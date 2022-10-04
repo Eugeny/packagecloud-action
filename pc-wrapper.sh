@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-for v in el/8 ol/6 ol/7
+for v in el/9 el/8 ol/6 ol/7
 do
     echo Pushing to $1/$v
     package_cloud push --verbose --yes ${1}/${v} ${2}/*.rpm
